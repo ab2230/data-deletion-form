@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete My Data - Velro</title>
+  <link rel="icon" href="assets/varlo.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      max-width: 180px;
+      height: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      color: #5a6a7a;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 600;
+      color: #2c3e50;
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e1e8ed;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+      box-sizing: border-box;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    }
+    button {
+      margin-top: 25px;
+      padding: 14px;
+      width: 100%;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+    }
+    .note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #7f8c8d;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #ecf0f1;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #2980b9;
+    }
+    .divider {
+      height: 1px;
+      background: #ecf0f1;
+      margin: 25px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="assets/varlo.png" alt="Velro Logo" class="logo">
+    </div>
+    <h1>Delete My Data</h1>
+    <p>If you would like us to delete your personal data associated with <b>Velro</b>, please fill out the form below.</p>
+    
+    <!-- Simple form via Formspree (free) -->
+    <form action="https://formspree.io/f/xblalwza" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="details">Details (optional)</label>
+      <textarea id="details" name="details" rows="4" placeholder="Any additional details about your request"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <div class="divider"></div>
+    <div class="note">
+      Alternatively, you can email us directly at 
+      <a href="mailto:Velro237@gmail.com">Velro237@gmail.com</a> 
+      with the subject line "Delete My Data".
+    </div>
+  </div>
+</body>
+</html>
